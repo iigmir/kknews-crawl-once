@@ -17,6 +17,7 @@ function request_parse(error, response, body, url)
 {
     function handle_files(err)
     {
+        debugger;
         if(err) { return console.log(err); }
         console.log("The file was saved!");
         return;
@@ -24,7 +25,7 @@ function request_parse(error, response, body, url)
     
     if( response && response.statusCode === 200 )
     {
-        fs.writeFile( name_path(body), text_render(body), (err) => handle_files(err) );
+        fs.writeFile( name_path(url), text_render(body), (err) => handle_files(err) );
     }
     else
     {

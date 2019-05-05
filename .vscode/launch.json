@@ -10,7 +10,6 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}/index.js",
             "args": ["https://kknews.cc/zh-tw/comic/vy9rp2y.html"]
-            // 
         }
     ]
 }
