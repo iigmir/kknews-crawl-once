@@ -24,7 +24,7 @@ function request_parse(error, response, body, url)
     
     if( response && response.statusCode === 200 )
     {
-        fs.writeFile( name_path(url), text_render(body), (err) => handle_files(err) );
+        fs.writeFile( name_path(body), text_render(body), (err) => handle_files(err) );
     }
     else
     {
